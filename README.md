@@ -1,8 +1,34 @@
-Clone clone_url
+Authentication and User Manager service
 
-npm install
+A production-ready authentication service built with node js, PostgreSQL and JWT
 
-#npx prisma generate #dev only
+Key Feature:
 
-#run migration code for creation db with desired scehema
-npx prisma migrate dev --name init
+    User registration and login (email + password)
+    Secure password hashing using bcrypt
+    JWT-based authentication
+    Clean, moduler architecture
+
+Client (Web / Mobile)
+|
+v
+Auth API (Node.js + Express)
+|
+v
+PostgreSQL Database (Prisma ORM)
+
+Tech Stack:
+
+Backend: Node.js, Express.js
+
+Database: PostgreSQL
+
+ORM: Prisma
+
+Authentication: JWT (Access & Refresh Tokens)
+
+Security: bcrypt
+
+Dev Tools: Nodemon, dotenv
+
+Deployment: Docker (optional)
