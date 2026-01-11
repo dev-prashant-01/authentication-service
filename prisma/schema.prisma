@@ -10,15 +10,18 @@ datasource db {
 
 model User {
   id           String   @id @default(uuid())
+  name         String   
   email        String   @unique
   passwordHash String
-  role         Role     @default(USER)
+  role         Role     @default(CONSUMER)
   isVerified   Boolean  @default(false)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 }
 
 enum Role {
-  USER
+  CONSUMER
+  PRODUCER
+  MILKMAN
   ADMIN
 }

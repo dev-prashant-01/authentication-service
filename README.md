@@ -1,5 +1,7 @@
 Authentication and User Management service
 
+"JWT-based authentication with Redis-backed token revocation"
+
 A production-ready authentication service built with Node js, PostgreSQL and JWT
 
 Key Feature:
@@ -43,7 +45,7 @@ Environment Variables:
 create .env file using below:
 
     PORT=4000
-    DATABASE_URL=postgresql://username:password@localhost:5432/dbname
+    DATABASE_URL=postgresql://your_psql_username:your_password@localhost:5432/your_database
     JWT_ACCESS_SECRET=your_access_secret
     JWT_REFRESH_SECRET=your_refresh_secret
     ACCESS_TOKEN_EXPIRY=15m
